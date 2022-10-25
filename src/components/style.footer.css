@@ -1,0 +1,52 @@
+.footer{
+    background-color: black;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lora', serif;
+
+}
+
+.contato{
+   
+    color: white;
+}
+
+.contato-email{
+display: flex;
+align-items: center;  
+     
+}
+.contato-email a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    color: white;
+}
+
+.contato svg{
+color: white;
+font-size: 40px;
+transition: all linear 0.15s;
+}
+.contato svg:hover{
+    color: rgb(93, 93, 160);
+}
+
+.dev{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contato-git {
+    display: flex;
+    align-items: center;
+}
+.contato-git svg{
+font-size: 50px;
+color: white;
+}
+.contato-git svg:hover{
+    color: rgb(93, 93, 160);
+}

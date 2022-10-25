@@ -1,0 +1,27 @@
+.container-sobre{
+    padding: 8% 5% 8% 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.icon-img{
+width: 300px;
+height: 300px;
+}
+
+.sobre{
+    max-width: 500px;
+    line-height: 22px;
+}
+.sobre h1{
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Delius', cursive;}
+.sobre p{
+    margin-bottom: 5%;
+    text-align: justify;
+    font-family: 'Lora', serif;
+
+}

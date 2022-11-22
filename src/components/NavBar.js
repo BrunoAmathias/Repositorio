@@ -2,15 +2,15 @@ import './style.navBar.css'
 
 const NavBar = () => {
   return (
-    <nav className="navBar">
+    <nav id='home' className="navBar">
         <div>
             <h2>B.A Mathias</h2>
         </div>
         <ul>
-            <li>Home</li>
-            <li>Projetos</li>
-            <li>Experiência</li>
-            <li>Contato</li>
+          <a href="#home"><li>Home</li></a>
+          <a href="#projetos"><li>Projetos</li></a>
+          <a href="#habilidade"><li>Experiência</li></a>
+          <a href="#contato"><li>Contato</li></a>  
         </ul>
 
 

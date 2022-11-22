@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade' ;
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer id='contato' className='footer'>
         <Fade duration={2000}>
         <div className='contato'>
             <div>

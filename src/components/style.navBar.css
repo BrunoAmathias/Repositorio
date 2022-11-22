@@ -4,12 +4,13 @@
     align-items: center;
     height: 120px;
     background-color: rgb(20, 20, 20);
-    color: white;
     z-index: 10;
-   
+    color: white;
 }
 .navBar div{
-    font-family: 'Delius', cursive;}
+    font-family: 'Delius', cursive;
+    text-shadow: 7px 10px 5px rgb(0, 0, 0);
+}
 
 .navBar ul {
     display: flex;
@@ -17,4 +18,21 @@
     gap: 25px;
     font-size: 17px;
     font-family: 'Lora', serif;
+}
+
+.navBar a {
+color: white;
+text-decoration: none;
+transition: all linear .2s;
+border: none;
+text-shadow: 7px 10px 4px rgb(0, 0, 0);
+
+}
+.navBar a li{
+
+}
+
+.navBar a:hover{
+  color:rgb(93, 93, 160);
+
 }

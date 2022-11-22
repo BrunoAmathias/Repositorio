@@ -31,9 +31,11 @@
     transition: all linear 0.3s;
     cursor: pointer;
     position:relative;
+    filter: grayscale(70%);
 }
 .img-projetos:hover{
     transform: scale(1.05);
+    filter: grayscale(0%);
 }
 
 

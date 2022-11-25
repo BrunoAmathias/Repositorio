@@ -51,30 +51,30 @@ function mouseLeave(){
       <Zoom>
         <div className='habilidades'>
         <div className='container-icones-habilidades'>
-        <div id='0' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone html'>
-        <FaHtml5 id='0' />
+        <div id='0' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone html'>
+        <FaHtml5 />
         </div>
-        <div id='1' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone css'>
+        <div id='1' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone css'>
         <FaCss3Alt/>
         </div>
-        <div id='2' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone javascript' > 
+        <div id='2' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone javascript' > 
         <IoLogoJavascript/>
         </div>
-        <div id='3' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone react'>
+        <div id='3' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone react'>
         <FaReact/>
         </div>
         </div>
         <div className='container-icones-habilidades'>
-        <div id='4' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone bootstrap'>
+        <div id='4' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone bootstrap'>
         <FaBootstrap/>
         </div>
-        <div id='5' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone git'>
+        <div id='5' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone git'>
         <FaGitAlt/>
         </div>
-        <div id='6' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone github'>
+        <div id='6' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone github'>
         <FaGithub/>
         </div>
-        <div id='7' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone vercel'>
+        <div id='7' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone vercel'>
         <IoLogoVercel/>
         </div>
         </div>

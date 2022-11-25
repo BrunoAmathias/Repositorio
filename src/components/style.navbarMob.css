@@ -1,0 +1,50 @@
+.navBar-mobile{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: -200px;
+    height: 100vh;
+    width: 200px ;
+    z-index: 2;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all linear 0.2s;
+}
+
+.showNavMobile{
+    left: 0px;
+}
+
+
+
+
+.navBar-mobile ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Lora', serif;
+}
+
+.navBar-mobile ul a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color:rgb(93, 93, 160);
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+}
+
+.navBar-mobile ul a:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navBar-mobile a svg{
+    font-size: 20px;
+    color: white;
+}
+
+

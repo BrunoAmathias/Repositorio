@@ -50,3 +50,17 @@ color: white;
 .contato-git svg:hover{
     color: rgb(93, 93, 160);
 }
+
+
+@media(max-width: 500px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato svg{
+        font-size: 30px;
+    }
+    .contato-email{
+        font-size: 13px;
+    }
+}

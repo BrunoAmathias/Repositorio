@@ -1,7 +1,7 @@
 import './style.apresentação.css'
 import Fade from 'react-reveal/Fade' ;
 import Typewriter from 'typewriter-effect';
-import { FaHtml5, FaCss3Alt, FaReact} from 'react-icons/fa';
+import {FaReact} from 'react-icons/fa';
 const Apresentação = () => {
 
 
@@ -10,12 +10,12 @@ const Apresentação = () => {
     
   return (
     <div className='container-apresentação'>
-      <div>
-        <FaReact className='container-icon-react' />
-      </div>
+      
+        
+     
         <div className='introdução'> 
              <Fade duration={1500} left>
-            <div>
+            <div className='container-nome'>
                 
                 <h3>Olá, me chamo</h3>
                 <h1><Typewriter onInit={(typewriter)=>{
@@ -30,7 +30,7 @@ const Apresentação = () => {
             </div>
             </Fade>
              <Fade duration={1500} right>
-            <div>
+            <div className='container-img-bruno'>
                 <img className='img-bruno' src="bruno.png" alt="foto Bruno" />
             </div>
             </Fade>

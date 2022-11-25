@@ -4,8 +4,9 @@ import Zoom from 'react-reveal/Zoom';
 
 const Sobre = () => {
   return (
-
+ <div className='teste'>
     <div className='container-sobre'>
+     
       <RubberBand duration={1500}>
         <div>
         <img className='icon-img' src="icon.png" alt="" />
@@ -21,8 +22,9 @@ const Sobre = () => {
 
         </div>
         </Zoom >
+        
     </div>
-   
+   </div>
   )
 }
 

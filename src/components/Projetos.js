@@ -2,13 +2,16 @@ import './style.projetos.css'
 import React, { Fragment } from 'react'
 import  {useState} from 'react'
 import Fade from 'react-reveal/Fade';
+import { projects } from '../data/DataProjetos';
+import Modal from './Modal';
 
 
 
 const Projetos = () => {
 
   const [projetos, setProjetos] = useState(false)
-
+  const [open, setOpen] = React.useState(false);
+  const [dataProject, setDataProject] = useState([])
 
 
 
@@ -20,8 +23,11 @@ const Projetos = () => {
   }
 
 
- 
-
+  const handleClickOpen = () => {
+    setOpen(true);
+  }
+  
+console.log(dataProject);
   return (
     <div id='projetos' className='container-projetos'>
 
@@ -32,24 +38,16 @@ const Projetos = () => {
       </Fade>
     <Fade duration={1500} left>
       <div className='projetos'> 
-      
-        <div className='container-img-projetos' alt='Bruno'> 
-        <a href="https://github.com/BrunoAmathias/Oficial-react" target='_blank' rel="noreferrer">
-            <img className='img-projetos' src="./oficial.png" alt="Oficial Chopp Espeto"/>
-        </a>
+       {
+        projects.map((project)=>
+          <div onClick={handleClickOpen} className='container-img-projetos' alt='Bruno'> 
+            <img onClick={()=> setDataProject(project)} className='img-projetos' src={project.img} alt={project.name}/>
         </div >
-      
-        <div className='container-img-projetos'>
-          <a href="https://github.com/BrunoAmathias/to-do-list" target='_blank' rel="noreferrer">
-            <img className='img-projetos' src="./to-do-list.png" alt="To-do-list" />
-          </a>
-        </div>
-        <div className='container-img-projetos'>
-          <a href="https://github.com/BrunoAmathias/Jogo-Mem-ria-React" target='_blank' rel="noreferrer">
-            <img className='img-projetos' src="./memoria.png" alt="Jogo da memória" />
-          </a>
-        </div>
+        )
+       }
       </div>
+      <Modal dataProject={dataProject} open={open} setOpen={setOpen}/>
+
     </Fade>
 
       { projetos ? 

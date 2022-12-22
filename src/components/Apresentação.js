@@ -1,7 +1,6 @@
 import './style.apresentação.css'
 import Fade from 'react-reveal/Fade' ;
 import Typewriter from 'typewriter-effect';
-import {FaReact} from 'react-icons/fa';
 const Apresentação = () => {
 
 

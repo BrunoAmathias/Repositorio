@@ -1,15 +1,16 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
+import { FaGitAlt } from 'react-icons/fa';
+import { Link } from '@mui/material';
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -51,10 +52,12 @@ BootstrapDialogTitle.propTypes = {
 
 export default function Modal({open, setOpen, dataProject}) {
 
- 
+
   const handleClose = () => {
     setOpen(false);
   };
+
+
 
   return (
     <div>
@@ -68,19 +71,27 @@ export default function Modal({open, setOpen, dataProject}) {
           {dataProject.name}
         </BootstrapDialogTitle>
         <DialogContent dividers>
-          <Box gutterBottom maxWidth='500px' component='img' src={dataProject.img}/>
-          
-        </DialogContent>
+          <Link href={dataProject.url} rel="noreferrer" target='_blank'>
+          <Box gutterBottom width='100%' component='img' src={dataProject.img}/>
+          </Link>
+        </DialogContent>  
         <DialogContent dividers>
-        <Typography gutterBottom>
-                Descrição do projeto e tals bla bla bla bla
+        <Typography  gutterBottom>
+          <span >
+          Descrição : 
+          </span>
+          {' '}
+          {dataProject.desc}
           </Typography>
           </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
+        <DialogContent dividers>
+        <Typography display='flex' justifyContent="center" alignItems='center'>
+          GitHub : 
+            <Link href={dataProject.git} rel="noreferrer" target='_blank' >
+              <FaGitAlt fontSize='30px' color="black" />
+            </Link>
+          </Typography>
+        </DialogContent>
       </BootstrapDialog>
     </div>
   );

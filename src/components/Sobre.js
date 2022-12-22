@@ -15,10 +15,11 @@ const Sobre = () => {
         <Zoom duration={1500} right>
         <div className='sobre'>
             <h1>Sobre mim</h1>
-            <p>Meu nome é Bruno Mathias e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação. 
-                Possuo experiência em Desenvolvimento Web. Trabalhei com projetos envolvendo gestão educacional, 
-                APIs e banco de dados. Atualmente estou focando nas tecnologias voltadas ao FrontEnd.</p>
-            <p>Hoje já entendo tecnologias como ReactJS, Bootstrap, Mysql, etc.</p>
+            <p>Sou um Adepto e curioso por tecnologia comecei a trilhar oficialmente esse caminho em 2021 quando comecei a faculdade de Engenharia de Computação, 
+              mas mesmo antes disso eu já era um admirador e tinha grande interesse por esse meio. 
+              Com mais de dois anos estudando a fundo sobre programação pude absorver alguns conhecimentos 
+              técnicos e experiências práticas que vem me auxiliando e motivando a cada vez mais aprender 
+              sobre as áreas que eu tenho interesse.</p>
 
         </div>
         </Zoom >

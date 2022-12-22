@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Zoom from  'react-reveal/Zoom' ;
 import './style.habilidades.css'
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaGithub } from 'react-icons/fa';
+import {SiStyledcomponents} from 'react-icons/si'
 import { IoLogoJavascript } from 'react-icons/io';
 import {IoLogoVercel } from 'react-icons/io5';
 
@@ -32,7 +33,7 @@ if(id === '4'){
   setDesc('Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.')
 }
 if(id === '5'){
-  setDesc('Git é um sistema para controle de versão usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software.')
+  setDesc('O Styled Components é uma biblioteca do React e do React Native que nos permite criar componentes de estilo ao escrever códigos CSS dentro de um arquivo JavaScript. O modo de estilizar um componente utilizando a biblioteca Styled Components também é conhecido como CSS-in-JS.')
 }
 if(id === '6'){
   setDesc( 'O GitHub é o maior repositório de dados compartilhado do mundo, com 28 milhões de usuários atualmente.')
@@ -51,25 +52,25 @@ function mouseLeave(){
       <Zoom>
         <div className='habilidades'>
         <div className='container-icones-habilidades'>
-        <div id='0' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone html'>
+        <div id='0' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone html'>
         <FaHtml5 />
         </div>
-        <div id='1' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone css'>
-        <FaCss3Alt/>
+        <div id='1' onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone css'>
+        <FaCss3Alt />
         </div>
-        <div id='2' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone javascript' > 
-        <IoLogoJavascript/>
+        <div id='2'  onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone javascript' > 
+        <IoLogoJavascript />
         </div>
-        <div id='3' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone react'>
-        <FaReact/>
+        <div id='3'  onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone react'>
+        <FaReact />
         </div>
         </div>
         <div className='container-icones-habilidades'>
         <div id='4' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone bootstrap'>
         <FaBootstrap/>
         </div>
-        <div id='5' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone git'>
-        <FaGitAlt/>
+        <div id='5' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone styled'>
+        <SiStyledcomponents/>
         </div>
         <div id='6' onClick={mouseOver} onMouseOver={mouseOver} onMouseLeave={mouseLeave} className='icone github'>
         <FaGithub/>

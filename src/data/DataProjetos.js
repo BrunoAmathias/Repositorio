@@ -9,13 +9,13 @@ export const OpenProjects = [
         name: 'Todo List',
         git: 'https://github.com/BrunoAmathias/to-do-list',
         url: 'https://to-do-list-livid-mu.vercel.app',
-        desc: 'O Todo List foi um projeto desenvolvido com uma finalidade específica, organizar os meus estudos e fazer uma métrica de objetivos a serem alcançados, no projeto existem algumas funcionalidades como apagar, deixar a tarefa pronta e modificar a tarefa atribuida, nele foi utilizado o React com a biblioteca Material UI e CSS para a estilização',
+        desc: 'O Todo List foi um projeto desenvolvido com uma finalidade específica, organizar os meus estudos e fazer uma métrica de objetivos a serem alcançados, no projeto existem algumas funcionalidades como apagar, deixar a tarefa pronta e modificar a tarefa atribuida, nele foi utilizado o React com a biblioteca Material UI e CSS para a estilização.',
         img:'./to-do-list.png'},
     {   id: 3,
         name: 'Jogo da memória',
         git: 'https://github.com/BrunoAmathias/Jogo-Mem-ria-React',
         url: 'https://jogo-mem-ria-react-23l8.vercel.app',
-        desc: 'O jogo da memória foi feito utilizando o React como gerenciamento de estados e Context para passar informações para os componentes com mais facilidade, no projeto foi implementado também um sistema de rank com o nome e número demovimentos.',
+        desc: 'O jogo da memória foi feito utilizando o React como gerenciamento de estados e Context para passar informações para os componentes com mais facilidade e Styled components para estilizar, no projeto foi implementado também um sistema de rank com o nome e número demovimentos.',
         img:'./memoria.png'},
     
     ]
@@ -37,6 +37,6 @@ export const CloseProjects = [
         name: 'Pokédex',
         git: 'https://github.com/BrunoAmathias/PokedexReact',
         url: 'https://pokedex-react-ecru-six.vercel.app',
-        desc: 'A Pokédex foi criada por pura questão de conhecimento e curiosidade, nesse projeto foi utilizado a API PókeAPI e desenvolvido com React, utilizando a biblioteca Material UI para a componentização dos pokemons, nessa aplicação podemos clicar em cima de cada pokémon e saber mais informações sobre eles, foi criado também um sistema de pesquisa para encontrar o pokémon desejado. ',
+        desc: 'A Pokédex foi criada por pura questão de conhecimento e curiosidade, nesse projeto foi utilizado a API PókeAPI e desenvolvido com React, utilizando a biblioteca Material UI para a componentização dos pokemons, nessa aplicação podemos clicar em cima de cada pokémon e saber mais informações sobre eles, foi criado também um sistema de pesquisa para encontrar o pokémon desejado.',
         img:'./pokedex.png'},
 ]

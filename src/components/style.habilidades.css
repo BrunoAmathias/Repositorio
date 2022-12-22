@@ -61,8 +61,8 @@ transform: scale(1.05);}
 .bootstrap:hover{
     color: rgb(119,16,241);
 }
-.git:hover{
-    color: rgb(233,78,49);
+.styled:hover{
+    color: #C760B2
 }
 
 

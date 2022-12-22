@@ -74,12 +74,12 @@ export default function Modal({open, setOpen, dataProject}) {
           <Link href={dataProject.url} rel="noreferrer" target='_blank'>
           <Box gutterBottom width='100%' component='img' src={dataProject.img}/>
           </Link>
-        </DialogContent>  
+        </DialogContent >  
         <DialogContent dividers>
         <Typography  gutterBottom>
-          <span >
+          <Typography display='inline' variant='h6' color='black' >
           Descrição : 
-          </span>
+          </Typography>
           {' '}
           {dataProject.desc}
           </Typography>
